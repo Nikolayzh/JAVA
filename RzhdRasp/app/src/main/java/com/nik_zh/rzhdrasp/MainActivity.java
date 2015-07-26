@@ -91,7 +91,7 @@ public class MainActivity extends Activity {
 
     class RaspSpinnerClass implements OnItemSelectedListener {
         WebView webView = (WebView) findViewById(R.id.webView);
-        WebView webView2 = (WebView) findViewById(R.id.webView2);
+
 
 
         @Override
@@ -101,9 +101,9 @@ public class MainActivity extends Activity {
 
 
             WebSettings webSettings = webView.getSettings();
-            WebSettings webSettings2 = webView2.getSettings();
+
             webSettings.setJavaScriptEnabled(true);
-            webSettings2.setJavaScriptEnabled(true);
+
             webView.loadUrl(url+url1);
 
 
@@ -170,12 +170,18 @@ public class MainActivity extends Activity {
                         url1 = "&toName=5+км&when=&fromId=s9612962&toId=s9613266";
                         webView.loadUrl(url + url1);
                         break;
+                    case 15:
+                        url1 = "&fromName=Минеральные+Воды";
+                        break;
+                    case 16:
+                        url1 = "&fromName=Минеральные+Воды";
+                        break;
                       }
             }
             if (spin2.getId() == R.id.spin2) {
                 switch (position){
                     case 0:
-                    url = "https://t.rasp.yandex.ru/search/suburban/?toId=c11063&fromId=s9612962&toName=Минеральные+Воды";
+                    url = "https://t.rasp.yandex.ru/search/suburban/?toId=s9612962&fromId=s9613073&when=сегодня&toName=Минеральные+Воды";
                         webView.loadUrl(url+url1);
                         break;
                     case 1:
@@ -239,7 +245,7 @@ public class MainActivity extends Activity {
                         webView.loadUrl(url+url1);
                         break;
                     case 16:
-                        url = "https://t.rasp.yandex.ru/search/suburban/?toId=c11063&fromId=s9612962&toName=Кисловодск";
+                        url = "https://t.rasp.yandex.ru/search/suburban/?toId=s9612962&fromId=s9613073&when=сегодня&toName=Кисловодск";
                         webView.loadUrl(url+url1);
                         break;
 

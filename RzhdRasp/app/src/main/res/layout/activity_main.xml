@@ -65,73 +65,18 @@
                 android:layout_column="0" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TabHost
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/tabHost"
-                android:layout_column="0">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TabWidget
-                        android:id="@android:id/tabs"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TabWidget>
-
-                    <FrameLayout
-                        android:id="@android:id/tabcontent"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:id="@+id/tab1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <WebView
-                                android:layout_width="match_parent"
-                                android:layout_height="327dp"
-                                android:id="@+id/webView"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignRight="@+id/tableLayout"
-                                android:layout_alignEnd="@+id/tableLayout"
-                                android:layout_alignParentBottom="true"
-                                android:layout_below="@+id/tableLayout" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/tab2"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <WebView
-                                android:layout_width="354dp"
-                                android:layout_height="334dp"
-                                android:id="@+id/webView2"
-                                android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignRight="@+id/tableLayout"
-                                android:layout_alignEnd="@+id/tableLayout"
-                                android:layout_alignParentBottom="true"
-                                android:layout_below="@+id/tableLayout" />
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </LinearLayout>
-            </TabHost>
-        </TableRow>
-
     </TableLayout>
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tableLayout"
+        android:layout_alignEnd="@+id/tableLayout" />
 
 
 </RelativeLayout>
